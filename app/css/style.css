@@ -124,7 +124,8 @@ body {
   .main-header__lang:hover .main-header__lang-item--transparent {
     opacity: 1; }
   .main-header__bottom-wrap {
-    position: relative; }
+    position: relative;
+    z-index: 5; }
   .main-header__promo {
     width: 485px;
     padding: 0 0 0 20px; }
@@ -147,11 +148,27 @@ body {
     margin: -150px -257px 0 0;
     border: 30px solid #1f90fe; }
   .main-header__img-box1 {
-    width: 860px;
-    height: 371px;
-    -webkit-transform: rotate(134deg);
-        -ms-transform: rotate(134deg);
-            transform: rotate(134deg); }
+    width: 1192px;
+    height: 521px;
+    position: absolute;
+    top: -36px;
+    left: -131px;
+    background: url("../img/image-box1.png") no-repeat;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75); }
+  .main-header__img-box2 {
+    width: 758px;
+    height: 254px;
+    position: absolute;
+    bottom: 65px;
+    left: 342px;
+    background: url("../img/image-box2.png") no-repeat;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75); }
 
 .button {
   display: block;

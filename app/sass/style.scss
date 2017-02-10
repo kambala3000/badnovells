@@ -60,6 +60,7 @@ body {
         position: relative;
         background-color: $main-blue;
         z-index: 2;
+        // overflow: hidden;
         &::before {
             content: "B.A.D. novells";
             display: block;
@@ -117,6 +118,7 @@ body {
     }
     &__bottom-wrap {
         position: relative;
+        z-index: 5;
     }
     &__promo {
         width: 485px;
@@ -142,11 +144,33 @@ body {
         height: 818px;
         margin: -150px -257px 0 0;
         border: 30px solid $sub-blue;
+        // z-index: 3;
     }
     &__img-box1 {
-        width: 860px;
-        height: 371px;
-        transform: rotate(134deg);
+        width: 1192px;
+        height: 521px;
+        position: absolute;
+        top: -36px;
+        left: -131px;
+        background: url('#{$images-path}/image-box1.png') no-repeat;
+        transform: rotate(-45deg);
+        -webkit-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
+        box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
+        // z-index: 6;
+    }
+    &__img-box2 {
+        width: 758px;
+        height: 254px;
+        position: absolute;
+        bottom: 65px;
+        left: 342px;
+        background: url('#{$images-path}/image-box2.png') no-repeat;
+        transform: rotate(-45deg);
+        -webkit-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
+        box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
+        // z-index: 6;
     }
 }
 
@@ -164,7 +188,6 @@ body {
         background-color: $icons-color;
         color: $white;
     }
-
     &--promo {
         width: 303px;
         margin: 45px 0 0 0;
@@ -246,7 +269,6 @@ body {
         height: 40px;
     }
 }
-
 
 
 /* PROJECTS SECTION */
