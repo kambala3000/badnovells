@@ -20,6 +20,13 @@
 </head>
 
 <body>
+                        <div class="modal-window"> 
+			       <div class="frame-for-modal-image">
+				       <div class="close-modal"></div>
+				       <div class="cross-in-circle"><img src="img/cross-in-circle.svg" alt="" width="70%"></div>
+                                        <img src="img/preview--1.jpg" data-link="received" alt="screen1" width="100%">
+		               </div>
+                        </div>
     <header class="main-header">
         <div class="main-header__inner">
             <div class="main-header__top-wrap">
@@ -120,25 +127,21 @@
                     <div class="projects__logo"></div>
                     <div class="gallery projects__gallery">
                         <!--- Modal window --->
-                        <div class="modal-window"> 
-                            <p> kurva </p>
-                            <img src="img/preview--1.jpg" alt="screen1" >
-                        </div>
                         <!--- end modal window -->
                         <div class="gallery__item">
-                            <img src="img/preview--1.jpg" alt="screen1" class="gallery__image">
+                            <img src="img/preview--1.jpg" alt="screen1" class="gallery__image" data-link='modal'>
                             <div class="gallery__overlay"></div>
                         </div>
                         <div class="gallery__item">
-                            <img src="img/preview--2.jpg" alt="screen2">
+                            <img src="img/preview--2.jpg" alt="screen2" data-link='modal'>
                             <div class="gallery__overlay"></div>
                         </div>
                         <div class="gallery__item">
-                            <img src="img/preview--3.jpg" alt="screen3">
+                            <img src="img/preview--3.jpg" alt="screen3" data-link='modal'>
                             <div class="gallery__overlay"></div>
                         </div>
                         <div class="gallery__item">
-                            <img src="img/preview--4.jpg" alt="screen4">
+                            <img src="img/preview--4.jpg" alt="screen4" data-link='modal'>
                             <div class="gallery__overlay"></div>
                         </div>
                     </div>
@@ -148,6 +151,8 @@
     <!-- afterdocument:js -->
     <script src="js/main.js"></script>
     <!-- endinject -->
+    <script src="js/modal-window.js" >
+    </script>
 </body>
 
 </html>
