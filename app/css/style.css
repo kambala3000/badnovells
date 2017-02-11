@@ -137,16 +137,15 @@ body {
     margin: -150px -257px 0 0;
     border: 30px solid #1f90fe; }
   .main-header__img-box1 {
-<<<<<<< HEAD
     width: 1192px;
     height: 521px;
     position: absolute;
     top: -36px;
     left: -131px;
     background: url("../img/image-box1.png") no-repeat;
-    -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
     box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75); }
   .main-header__img-box2 {
     width: 758px;
@@ -155,9 +154,9 @@ body {
     bottom: 65px;
     left: 342px;
     background: url("../img/image-box2.png") no-repeat;
-    -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
     box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75); }
 
 .button {
@@ -259,9 +258,7 @@ body {
     position: absolute;
     top: -81%;
     left: 26.03%;
-    -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
     background-color: #3d6dd1; }
   .projects__header {
     width: 265px;
@@ -270,9 +267,7 @@ body {
     top: -10%;
     left: 41%;
     position: absolute;
-    -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
     font: 34px/50px "Bebas Neue Regular", Arial, sans-serif;
     letter-spacing: 1px;
     color: #ffffff;
@@ -284,20 +279,13 @@ body {
     position: absolute;
     top: -11px;
     right: 30px;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
     font: 71px "GothamPro Light", Arial, sans-serif;
     color: #87a6ea; }
   .projects__wrap {
     display: flex;
-<<<<<<< HEAD
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    flex-direction: row;
+    justify-content: space-between; }
   .projects__logo {
     width: 650px;
     height: 500px;
@@ -333,7 +321,6 @@ body {
 .frame-for-modal-image {
   width: 60%;
   height: 60%;
-  border: 2px solid red;
   position: relative;
   overflow: hidden; }
 
@@ -342,7 +329,6 @@ body {
   justify-content: center;
   padding-top: 5%;
   position: fixed;
-  border: 2px solid red;
   width: 96%;
   height: 1000px;
   background-color: rgba(0, 0, 0, 0.5);
