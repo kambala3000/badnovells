@@ -60,7 +60,6 @@ body {
         position: relative;
         background-color: $main-blue;
         z-index: 2;
-        // overflow: hidden;
         &::before {
             content: "B.A.D. novells";
             display: block;
@@ -144,7 +143,6 @@ body {
         height: 818px;
         margin: -150px -257px 0 0;
         border: 30px solid $sub-blue;
-        // z-index: 3;
     }
     &__img-box1 {
         width: 1192px;
@@ -157,7 +155,6 @@ body {
         -webkit-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
         box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
-        // z-index: 6;
     }
     &__img-box2 {
         width: 758px;
@@ -170,7 +167,6 @@ body {
         -webkit-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
         box-shadow: -19px 23px 40px -21px rgba(0, 0, 0, 0.75);
-        // z-index: 6;
     }
 }
 
@@ -278,11 +274,54 @@ body {
     &__inner {
         width: 1322px;
         margin: 0 auto;
+        padding: 140px 0 0 0;
+        position: relative;
+    }
+    &__inner::before {
+        content: " ";
+        display: block;
+        width: 50%;
+        height: 50px;
+        position: absolute;
+        top: -81%;
+        left: 26.03%;
+        transform: rotate(-90deg);
+        background-color: $main-blue;
+    }
+    &__header {
+        width: 265px;
+        height: 50px;
+        padding: 0 0 0 15px;
+        top: -10%;
+        left: 41%;
+        position: absolute;
+        transform: rotate(-90deg);
+        font: 34px/50px "Bebas Neue Regular", $default-fonts;
+        letter-spacing: 1px;
+        color: $white;
+        background-color: $main-blue;
+    }
+    &__header::after {
+        content: "02";
+        display: block;
+        width: 100px;
+        position: absolute;
+        top: -11px;
+        right: 30px;
+        transform: rotate(90deg);
+        font: 71px "GothamPro Light", $default-fonts;
+        color: $icons-color;
     }
     &__wrap {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    &__logo {
+        width: 650px;
+        height: 500px;
+        background: url("#{$images-path}/project-logo--1.png") center center no-repeat;
+        background-size: 550px;
     }
 }
 
