@@ -59,23 +59,23 @@ body {
         margin: 0 auto;
         position: relative;
         background-color: $main-blue;
+        z-index: 4;
+    }
+    &__inner::before {
+        content: "B.A.D. novells";
+        display: block;
+        width: 17.5%;
+        height: 37px;
+        padding: 0 0 0 24px;
+        position: absolute;
+        left: 0;
+        top: 41px;
+        background-color: $sub-blue;
+        text-transform: uppercase;
+        font: 34px "Bebas Neue Regular", $default-fonts;
+        letter-spacing: 1px;
+        color: $white;
         z-index: 2;
-        &::before {
-            content: "B.A.D. novells";
-            display: block;
-            width: 17.5%;
-            height: 37px;
-            padding: 0 0 0 24px;
-            position: absolute;
-            left: 0;
-            top: 41px;
-            background-color: $sub-blue;
-            text-transform: uppercase;
-            font: 34px "Bebas Neue Regular", $default-fonts;
-            letter-spacing: 1px;
-            color: $white;
-            z-index: 2;
-        }
     }
     &__top-wrap {
         display: flex;
@@ -276,6 +276,7 @@ body {
         margin: 0 auto;
         padding: 140px 0 0 0;
         position: relative;
+        z-index: 3;
     }
     &__inner::before {
         content: " ";
@@ -383,53 +384,136 @@ body {
         opacity: 1;
     }
 }
-<<<<<<< HEAD
 
 .features {
     background-color: $main-blue;
     &__inner {
         width: 1322px;
         margin: 0 auto;
+        padding: 165px 0 0 0;
+        position: relative;
+        z-index: 2;
     }
+    &__inner::before {
+        content: " ";
+        display: block;
+        width: 50%;
+        height: 50px;
+        position: absolute;
+        top: -45%;
+        left: 25.74%;
+        transform: rotate(-90deg);
+        background-color: $white;
+    }
+    &__header {
+        width: 310px;
+        height: 50px;
+        padding: 0 0 0 15px;
+        top: -9%;
+        left: 39%;
+        position: absolute;
+        transform: rotate(-90deg);
+        font: 34px/50px "Bebas Neue Regular", $default-fonts;
+        letter-spacing: 1px;
+        color: $main-blue;
+        background-color: $white;
+    }
+    &__header::after {
+        content: "03";
+        display: block;
+        width: 100px;
+        position: absolute;
+        top: -11px;
+        right: 47px;
+        transform: rotate(90deg);
+        font: 71px "GothamPro Light", $default-fonts;
+        color: $icons-color;
+    }
+    &__text {
+        padding: 0 20px;
+        text-align: center;
+        font: 24px/1.2 "GothamPro Regular", $default-fonts;
+        letter-spacing: 1px;
+        color: $white;
+    }
+    &__wrap {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__item-head {
+        text-align: center;
+        text-transform: uppercase;
+        font: 34px/1.6 "Bebas Neue Bold", $default-fonts;
+        letter-spacing: 1px;
+        color: $white;
+    }
+    &__border-wrap {
+        width: 400px;
+        height: 335px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__border {
+        width: 216px;
+        height: 216px;
+        overflow: hidden;
+        border: 18px solid $sub-blue;
+        transform: rotate(45deg);
+        background-color: $features-bg;
+    }
+    &__image {}
 }
-=======
-.gallery__image {
-}
+
+// .gallery__image {}
+
 /******** modal window *************/
+
 .frame-for-modal-image {
-	width: 60%;
-	height: 60%;
-	position: relative;
-	overflow: hidden;
+    width: 60%;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
 }
+
 .modal-window {
-	display: flex;
-	justify-content: center;
-	padding-top:5%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
     position: fixed;
-    width: 96%;
+    width: 100%;
     height: 1000px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    left: 2%;
 }
+
 .close-modal {
-	width: 200px;
-	height: 200px;
-	background-color: #ffffff;
-	position: absolute;
-	right: -120px;
-	top: -120px;
-	transform: rotate(45deg);
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    position: absolute;
+    right: -120px;
+    top: -120px;
+    transform: rotate(45deg);
 }
+
 .cross-in-circle {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	width: 35px;
-	height: 35px;
-	right:10px;
-	top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 10px;
+    top: 10px;
 }
->>>>>>> ccde6e26941811c485851b336bd38db93ee78567
