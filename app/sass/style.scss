@@ -192,7 +192,7 @@ body {
 
 .triangle-right {
     position: relative;
-    top: 4px;
+    top: 5px;
 }
 
 .triangle-left {
@@ -283,7 +283,7 @@ body {
         width: 50%;
         height: 50px;
         position: absolute;
-        top: -81%;
+        top: -45%;
         left: 26.03%;
         transform: rotate(-90deg);
         background-color: $main-blue;
@@ -292,7 +292,7 @@ body {
         width: 265px;
         height: 50px;
         padding: 0 0 0 15px;
-        top: -10%;
+        top: -7%;
         left: 41%;
         position: absolute;
         transform: rotate(-90deg);
@@ -322,6 +322,33 @@ body {
         height: 500px;
         background: url("#{$images-path}/project-logo--1.png") center center no-repeat;
         background-size: 550px;
+    }
+    &__text {
+        padding: 30px 0 0 0;
+        font: 24px/1.2 "GothamPro Regular", $default-fonts;
+        text-align: justify;
+        color: $dark-text-color;
+    }
+    &__links {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+    }
+    &__app-link {
+        display: block;
+        width: 315px;
+        height: 102px;
+        margin-right: 45px;
+        cursor: pointer;
+    }
+    &__app-link:last-child {
+        margin-right: 0;
+    }
+    &__app-link--gplay {
+        background-image: url("#{$images-path}/app-link--gplay.png");
+    }
+    &__app-link--steam {
+        background-image: url("#{$images-path}/app-link--steam.png");
     }
 }
 
@@ -354,5 +381,13 @@ body {
     }
     &__overlay:hover {
         opacity: 1;
+    }
+}
+
+.features {
+    background-color: $main-blue;
+    &__inner {
+        width: 1322px;
+        margin: 0 auto;
     }
 }

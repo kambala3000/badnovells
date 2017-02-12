@@ -189,7 +189,7 @@ body {
 
 .triangle-right {
   position: relative;
-  top: 4px; }
+  top: 5px; }
 
 .triangle-left {
   position: relative;
@@ -287,7 +287,7 @@ body {
     width: 50%;
     height: 50px;
     position: absolute;
-    top: -81%;
+    top: -45%;
     left: 26.03%;
     -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
@@ -297,7 +297,7 @@ body {
     width: 265px;
     height: 50px;
     padding: 0 0 0 15px;
-    top: -10%;
+    top: -7%;
     left: 41%;
     position: absolute;
     -webkit-transform: rotate(-90deg);
@@ -334,6 +334,31 @@ body {
     height: 500px;
     background: url("../img/project-logo--1.png") center center no-repeat;
     background-size: 550px; }
+  .projects__text {
+    padding: 30px 0 0 0;
+    font: 24px/1.2 "GothamPro Regular", Arial, sans-serif;
+    text-align: justify;
+    color: #2b2a2c; }
+  .projects__links {
+    margin-top: 35px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .projects__app-link {
+    display: block;
+    width: 315px;
+    height: 102px;
+    margin-right: 45px;
+    cursor: pointer; }
+  .projects__app-link:last-child {
+    margin-right: 0; }
+  .projects__app-link--gplay {
+    background-image: url("../img/app-link--gplay.png"); }
+  .projects__app-link--steam {
+    background-image: url("../img/app-link--steam.png"); }
 
 .gallery {
   width: 650px;
@@ -369,3 +394,9 @@ body {
     opacity: 0; }
   .gallery__overlay:hover {
     opacity: 1; }
+
+.features {
+  background-color: #3d6dd1; }
+  .features__inner {
+    width: 1322px;
+    margin: 0 auto; }
