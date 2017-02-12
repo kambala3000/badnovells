@@ -383,6 +383,7 @@ body {
         opacity: 1;
     }
 }
+<<<<<<< HEAD
 
 .features {
     background-color: $main-blue;
@@ -391,3 +392,44 @@ body {
         margin: 0 auto;
     }
 }
+=======
+.gallery__image {
+}
+/******** modal window *************/
+.frame-for-modal-image {
+	width: 60%;
+	height: 60%;
+	position: relative;
+	overflow: hidden;
+}
+.modal-window {
+	display: flex;
+	justify-content: center;
+	padding-top:5%;
+    position: fixed;
+    width: 96%;
+    height: 1000px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    left: 2%;
+}
+.close-modal {
+	width: 200px;
+	height: 200px;
+	background-color: #ffffff;
+	position: absolute;
+	right: -120px;
+	top: -120px;
+	transform: rotate(45deg);
+}
+.cross-in-circle {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	right:10px;
+	top:10px;
+}
+>>>>>>> ccde6e26941811c485851b336bd38db93ee78567
