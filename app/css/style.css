@@ -186,6 +186,12 @@ body {
   .button--promo {
     width: 303px;
     margin: 45px 0 0 0; }
+  .button--submit {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    background-color: #ffffff; }
 
 .triangle-right {
   position: relative;
@@ -268,10 +274,16 @@ body {
   .social__link:hover {
     fill: #ffffff;
     border-color: #ffffff; }
+  .social__link--hover-blue:hover {
+    fill: #1f90fe;
+    border-color: #1f90fe; }
   .social__svg {
     display: block;
     width: 40px;
     height: 40px; }
+  .social__svg--big {
+    width: 50px;
+    height: 50px; }
 
 /* PROJECTS SECTION */
 .projects {
@@ -501,6 +513,61 @@ body {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     background-color: #4b99ba; }
+
+.contacts {
+  background-color: #ffffff; }
+  .contacts__inner {
+    width: 1322px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contacts__promo-head {
+    text-align: center;
+    text-transform: uppercase;
+    font: 60px/1.2 "Bebas Neue Regular", Arial, sans-serif;
+    letter-spacing: 2px;
+    color: #87a6ea; }
+  .contacts__text {
+    padding: 25px 0 0 0;
+    font: 24px/1.2 "GothamPro Regular", Arial, sans-serif;
+    text-align: center;
+    color: #2b2a2c; }
+  .contacts__social {
+    width: 350px;
+    margin: 40px 0 30px 0; }
+  .contacts__form-wrap {
+    width: 960px;
+    padding-top: 20px; }
+
+.feedback {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .feedback__inp-text {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #3d6dd1;
+    outline: none;
+    font: 18px "GothamPro Light", Arial, sans-serif;
+    color: #2b2a2c; }
+  .feedback__inp-text--last {
+    margin-bottom: 55px; }
 
 /******** modal window *************/
 .frame-for-modal-image {

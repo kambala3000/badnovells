@@ -188,6 +188,13 @@ body {
         width: 303px;
         margin: 45px 0 0 0;
     }
+    &--submit {
+        width: 300px;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        background-color: $white;
+    }
 }
 
 .triangle-right {
@@ -259,10 +266,18 @@ body {
         fill: $white;
         border-color: $white;
     }
+    &__link--hover-blue:hover {
+        fill: $sub-blue;
+        border-color: $sub-blue;
+    }
     &__svg {
         display: block;
         width: 40px;
         height: 40px;
+    }
+    &__svg--big {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -472,7 +487,59 @@ body {
         transform: rotate(45deg);
         background-color: $features-bg;
     }
-    &__image {}
+    // &__image {}
+}
+
+.contacts {
+    background-color: $white;
+    &__inner {
+        width: 1322px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__promo-head {
+        text-align: center;
+        text-transform: uppercase;
+        font: 60px/1.2 "Bebas Neue Regular", $default-fonts;
+        letter-spacing: 2px;
+        color: $icons-color;
+    }
+    &__text {
+        padding: 25px 0 0 0;
+        font: 24px/1.2 "GothamPro Regular", $default-fonts;
+        text-align: center;
+        color: $dark-text-color;
+    }
+    &__social {
+        width: 350px;
+        margin: 40px 0 30px 0;
+    }
+    &__form-wrap {
+        width: 960px;
+        padding-top: 20px;
+    }
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    &__inp-text {
+        padding: 20px 0 20px 0;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid $main-blue;
+        outline: none;
+        font: 18px "GothamPro Light", $default-fonts;
+        color: $dark-text-color;
+    }
+    &__inp-text--last {
+        margin-bottom: 55px;
+    }
 }
 
 // .gallery__image {}
