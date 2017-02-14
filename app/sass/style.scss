@@ -200,6 +200,11 @@ body {
 .triangle-right {
     position: relative;
     top: 5px;
+    &--special {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
 
 .triangle-left {
@@ -323,7 +328,7 @@ body {
         width: 100px;
         position: absolute;
         top: -11px;
-        right: 30px;
+        right: 40px;
         transform: rotate(90deg);
         font: 71px "GothamPro Light", $default-fonts;
         color: $icons-color;
@@ -494,12 +499,48 @@ body {
     background-color: $white;
     &__inner {
         width: 1322px;
+        padding: 110px 0 0 0;
         margin: 0 auto;
         position: relative;
         z-index: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    &__inner::before {
+        content: " ";
+        display: block;
+        width: 50%;
+        height: 50px;
+        position: absolute;
+        top: -45%;
+        left: 23.85%;
+        transform: rotate(-90deg);
+        background-color: $main-blue;
+    }
+    &__header {
+        width: 260px;
+        height: 50px;
+        padding: 0 0 0 15px;
+        top: -9%;
+        left: 39%;
+        position: absolute;
+        transform: rotate(-90deg);
+        font: 34px/50px "Bebas Neue Regular", $default-fonts;
+        letter-spacing: 1px;
+        color: $white;
+        background-color: $main-blue;
+    }
+    &__header::after {
+        content: "04";
+        display: block;
+        width: 100px;
+        position: absolute;
+        top: -13px;
+        right: 30px;
+        transform: rotate(90deg);
+        font: 71px "GothamPro Light", $default-fonts;
+        color: $icons-color;
     }
     &__promo-head {
         text-align: center;
@@ -540,6 +581,69 @@ body {
     &__inp-text--last {
         margin-bottom: 55px;
     }
+}
+
+.main-footer {
+    position: relative;
+    background: url("#{$images-path}/footer-bg.svg") right bottom no-repeat;
+    // background-size: cover;
+    &__inner {
+        width: 1322px;
+        padding: 100px 0 0 0;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__up {
+        margin-bottom: 20px;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__text {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font: 30px "Bebas Neue Regular", $default-fonts;
+        letter-spacing: 1px;
+        color: $white;
+    }
+    &__link {
+        display: inline-block;
+        margin-bottom: 7px;
+        padding: 0 20px 0 0;
+        position: relative;
+        font: 18px/1.4 "GothamPro Regular", $default-fonts;
+        letter-spacing: 1px;
+        text-decoration: none;
+        cursor: pointer;
+        color: $white;
+    }
+    &__link::after {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 3px;
+        right: 0;
+        background: url("#{$images-path}/gh-bg.svg") center center no-repeat;
+        background-size: cover;
+    }
+}
+
+.up-arrow {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 50px;
+    color: $white;
+    background: url("#{$images-path}/up-arrow.svg") center center no-repeat;
+    background-size: cover;
 }
 
 // .gallery__image {}

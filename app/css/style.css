@@ -196,6 +196,10 @@ body {
 .triangle-right {
   position: relative;
   top: 5px; }
+  .triangle-right--special {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
 
 .triangle-left {
   position: relative;
@@ -326,7 +330,7 @@ body {
     width: 100px;
     position: absolute;
     top: -11px;
-    right: 30px;
+    right: 40px;
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -518,6 +522,7 @@ body {
   background-color: #ffffff; }
   .contacts__inner {
     width: 1322px;
+    padding: 110px 0 0 0;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -530,6 +535,44 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .contacts__inner::before {
+    content: " ";
+    display: block;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    top: -45%;
+    left: 23.85%;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    background-color: #3d6dd1; }
+  .contacts__header {
+    width: 260px;
+    height: 50px;
+    padding: 0 0 0 15px;
+    top: -9%;
+    left: 39%;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    font: 34px/50px "Bebas Neue Regular", Arial, sans-serif;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: #3d6dd1; }
+  .contacts__header::after {
+    content: "04";
+    display: block;
+    width: 100px;
+    position: absolute;
+    top: -13px;
+    right: 30px;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    font: 71px "GothamPro Light", Arial, sans-serif;
+    color: #87a6ea; }
   .contacts__promo-head {
     text-align: center;
     text-transform: uppercase;
@@ -568,6 +611,72 @@ body {
     color: #2b2a2c; }
   .feedback__inp-text--last {
     margin-bottom: 55px; }
+
+.main-footer {
+  position: relative;
+  background: url("../img/footer-bg.svg") right bottom no-repeat; }
+  .main-footer__inner {
+    width: 1322px;
+    padding: 100px 0 0 0;
+    margin: 0 auto;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .main-footer__up {
+    margin-bottom: 20px; }
+  .main-footer__wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .main-footer__text {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font: 30px "Bebas Neue Regular", Arial, sans-serif;
+    letter-spacing: 1px;
+    color: #ffffff; }
+  .main-footer__link {
+    display: inline-block;
+    margin-bottom: 7px;
+    padding: 0 20px 0 0;
+    position: relative;
+    font: 18px/1.4 "GothamPro Regular", Arial, sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff; }
+  .main-footer__link::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    background: url("../img/gh-bg.svg") center center no-repeat;
+    background-size: cover; }
+
+.up-arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #ffffff;
+  background: url("../img/up-arrow.svg") center center no-repeat;
+  background-size: cover; }
 
 /******** modal window *************/
 .frame-for-modal-image {
