@@ -16,6 +16,7 @@
     <!-- endinject -->
     <!-- inject:js -->
     <script src="js/libs/jquery-3.1.1.min.js"></script>
+    <script src="js/plugins/jquery.scrollTo.min.js"></script>
     <!-- endinject -->
 </head>
 
@@ -31,12 +32,15 @@
         <div class="main-header__inner">
             <div class="main-header__top-wrap">
                 <div class="main-logo main-header__logo">
-                    <a href="#" class="main-logo__link">Blue Angry Dog<span class="main-logo__link--break">team</span>
+                    <a href="#" class="main-logo__link">
+                        <img src="img/main-logo.png" alt="BAD" class="main-logo__image">
+                        Blue Angry Dog
+                        <span class="main-logo__link--break">team</span>
                     </a>
                 </div>
                 <div class="main-header__social">
                     <div class="social">
-                        <a href="#" class="social__link" target="_blank">
+                        <a href="https://www.facebook.com/badnovells/" class="social__link" target="_blank">
                             <svg class="social__svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 x="0px" y="0px" width="96.124px" height="96.123px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
                                 xml:space="preserve">
@@ -49,7 +53,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <a href="#" class="social__link" target="_blank">
+                        <a href="https://vk.com/badnovells" class="social__link" target="_blank">
                             <svg class="social__svg  social__svg--big" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 x="0px" y="0px" width="548.358px" height="548.358px" viewBox="0 0 548.358 548.358" style="enable-background:new 0 0 548.358 548.358;"
                                 xml:space="preserve">
@@ -102,7 +106,7 @@
                     <p class="main-header__promo-text">B.A.D. team - команда увлеченных и творческих людей, разрабатываю&shy;щих графические новеллы своей мечты.
                         Мы воплощаем наши чувства в своих проектах, делая их интерес&shy;ными для каждого.</p>
                     <p class="main-header__promo-text">Попробуйте наши продукты </br> и вы не пожалеете!</p>
-                    <a href="#" class="button button--promo">Смотреть проекты</a>
+                    <a class="button button--promo js-watch-proj">Смотреть проекты</a>
                 </div>
                 <div class="main-header__images-box">
                     <div class="main-header__img-box1"></div>
@@ -124,8 +128,10 @@
         </svg>
         <div class="projects__inner">
             <h4 class="projects__header">Проекты</h4>
-            <div class="projects__wrap">
-                <div class="projects__logo"></div>
+            <div class="projects__wrap js-proj-arch">
+                <div class="projects__logo-wrap">
+                    <img src="img/project-logo--1.png" alt="Сопредельные острова: право на жизнь" class="projects__logo-img">
+                </div>
                 <div class="gallery projects__gallery">
                     <div class="gallery__item">
                         <img src="img/preview--1.jpg" alt="screen1" class="gallery__image" data-link='modal'>
@@ -227,7 +233,7 @@
             <p class="contacts__text">Если у вас есть предложения или пожелания по нашим играм,</br> то вы можете легко связаться с нами:</p>
             <div class="contacts__social">
                 <div class="social">
-                    <a href="#" class="social__link social__link--hover-blue">
+                    <a href="https://www.facebook.com/badnovells/" class="social__link social__link--hover-blue" target="_blank">
                         <svg class="social__svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             x="0px" y="0px" width="96.124px" height="96.123px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
                             xml:space="preserve">
@@ -240,7 +246,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="#" class="social__link social__link--hover-blue">
+                    <a href="https://vk.com/badnovells" class="social__link social__link--hover-blue" target="_blank">
                         <svg class="social__svg social__svg--big" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             x="0px" y="0px" width="548.358px" height="548.358px" viewBox="0 0 548.358 548.358" style="enable-background:new 0 0 548.358 548.358;"
                             xml:space="preserve">
@@ -279,7 +285,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="#" class="social__link social__link--hover-blue">
+                    <a href="http://steamcommunity.com/id/bad_team" class="social__link social__link--hover-blue" target="_blank">
                         <svg class="social__svg social__svg--big" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                             id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;"
                             xml:space="preserve">
@@ -289,7 +295,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="#" class="social__link social__link--hover-blue">
+                    <a href="#" class="social__link social__link--hover-blue" target="_blank">
                         <svg class="social__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
                             x="0px" y="0px" viewBox="0 0 505.499 505.499" style="enable-background:new 0 0 505.499 505.499;"
                             xml:space="preserve" width="512px" height="512px">
@@ -315,13 +321,8 @@
         </div>
     </section>
     <footer class="main-footer">
-        <!--<svg class="triangle-right triangle-right--special" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 1280 212" enable-background="new 0 0 1280 212"
-            xml:space="preserve">
-            <polygon stroke="null" id="svg_2" points="131.2296600341797,210.99567210949894 1280.2291259765625,210.99567210949894 1280.2291259765625,-0.11925984174013138 "
-                fill="#3d6dd1" />
-        </svg>-->
         <div class="main-footer__inner">
-            <a href="#" class="up-arrow main-footer__up" title="UP"></a>
+            <a class="up-arrow  js-up main-footer__up" title="UP"></a>
             <div class="main-footer__wrap">
                 <a href="https://github.com/ogurchik" class="main-footer__link" target="_blank">ogurchik</a>
                 <a href="https://github.com/kambala3000" class="main-footer__link" target="_blank">kambala3000</a>

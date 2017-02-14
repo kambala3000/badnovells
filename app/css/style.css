@@ -83,7 +83,7 @@ body {
     top: 41px;
     background-color: #1f90fe;
     text-transform: uppercase;
-    font: 34px "Bebas Neue Regular", Arial, sans-serif;
+    font: 34px/1.1 "Bebas Neue Regular", Arial, sans-serif;
     letter-spacing: 1px;
     color: #ffffff;
     z-index: 2; }
@@ -179,6 +179,7 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #87a6ea;
+  cursor: pointer;
   transition: linear 0.2s; }
   .button:hover {
     background-color: #87a6ea;
@@ -203,7 +204,7 @@ body {
 
 .triangle-left {
   position: relative;
-  top: 0;
+  top: -1px;
   left: 0; }
 
 .main-logo {
@@ -232,12 +233,12 @@ body {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     z-index: 5; }
+  .main-logo__image {
+    padding: 5px 0 5px 0; }
   .main-logo__link {
     display: block;
-    padding: 165px 0 0 0;
     width: 210px;
     height: 210px;
-    background: url("../img/main-logo.png") 4px 5px no-repeat;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -346,11 +347,20 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .projects__logo {
+  .projects__logo-wrap {
     width: 650px;
     height: 500px;
-    background: url("../img/project-logo--1.png") center center no-repeat;
-    background-size: 550px; }
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .projects__logo-img {
+    width: 580px; }
   .projects__text {
     padding: 30px 0 0 0;
     font: 24px/1.2 "GothamPro Regular", Arial, sans-serif;
@@ -676,7 +686,8 @@ body {
   font-size: 50px;
   color: #ffffff;
   background: url("../img/up-arrow.svg") center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  cursor: pointer; }
 
 /******** modal window *************/
 .frame-for-modal-image {

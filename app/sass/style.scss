@@ -72,7 +72,7 @@ body {
         top: 41px;
         background-color: $sub-blue;
         text-transform: uppercase;
-        font: 34px "Bebas Neue Regular", $default-fonts;
+        font: 34px/1.1 "Bebas Neue Regular", $default-fonts;
         letter-spacing: 1px;
         color: $white;
         z-index: 2;
@@ -179,6 +179,7 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $icons-color;
+    cursor: pointer;
     transition: linear 0.2s;
     &:hover {
         background-color: $icons-color;
@@ -209,7 +210,7 @@ body {
 
 .triangle-left {
     position: relative;
-    top: 0;
+    top: -1px;
     left: 0;
 }
 
@@ -232,12 +233,15 @@ body {
         transform: rotate(45deg);
         z-index: 5;
     }
+    &__image {
+        padding: 5px 0 5px 0;
+    }
     &__link {
         display: block;
-        padding: 165px 0 0 0;
+        // padding: 165px 0 0 0;
         width: 210px;
         height: 210px;
-        background: url("#{$images-path}/main-logo.png") 4px 5px no-repeat;
+        // background: url("#{$images-path}/main-logo.png") 4px 5px no-repeat;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
@@ -338,11 +342,15 @@ body {
         flex-direction: row;
         justify-content: space-between;
     }
-    &__logo {
+    &__logo-wrap {
         width: 650px;
         height: 500px;
-        background: url("#{$images-path}/project-logo--1.png") center center no-repeat;
-        background-size: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo-img {
+        width: 580px;
     }
     &__text {
         padding: 30px 0 0 0;
@@ -644,6 +652,7 @@ body {
     color: $white;
     background: url("#{$images-path}/up-arrow.svg") center center no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 // .gallery__image {}
