@@ -53,6 +53,52 @@ body {
   background-color: #fff;
   overflow-x: hidden; }
 
+.button {
+  display: block;
+  border: 3px solid #87a6ea;
+  text-decoration: none;
+  text-align: center;
+  font: 34px/56px "Bebas Neue Regular", Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #87a6ea;
+  cursor: pointer;
+  transition: linear 0.2s; }
+  @media only screen and (max-width: 1340px) {
+    .button {
+      font-size: 26px; } }
+  .button:hover {
+    background-color: #87a6ea;
+    color: #ffffff; }
+  .button--promo {
+    width: 303px;
+    margin: 45px 0 0 0; }
+    @media only screen and (max-width: 1340px) {
+      .button--promo {
+        width: 250px; } }
+  .button--submit {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    background-color: #ffffff; }
+    @media only screen and (max-width: 1340px) {
+      .button--submit {
+        width: 250px; } }
+
+.triangle-right {
+  position: relative;
+  top: 5px; }
+  .triangle-right--special {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+
+.triangle-left {
+  position: relative;
+  top: -1px;
+  left: 0; }
+
 .main-header {
   background-color: #3d6dd1;
   position: relative; }
@@ -127,7 +173,8 @@ body {
     @media only screen and (max-width: 1340px) {
       .main-header__social {
         width: 137px;
-        height: 60px; } }
+        height: 60px;
+        margin-left: 20px; } }
   .main-header__lang {
     margin-top: 40px;
     padding-right: 20px;
@@ -180,7 +227,7 @@ body {
     margin: -150px -257px 0 0; }
     @media only screen and (max-width: 1340px) {
       .main-header__images-box {
-        right: 4px;
+        right: -8px;
         top: 77px; } }
 
 .top-slider {
@@ -215,13 +262,14 @@ body {
     @media only screen and (max-width: 1340px) {
       .top-slider__img-box1 {
         width: 943px;
-        height: 400px; } }
+        height: 400px;
+        left: -130px; } }
   .top-slider__img-box2 {
     width: 758px;
     height: 254px;
     position: absolute;
     bottom: 67px;
-    left: 342px;
+    left: 340px;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
@@ -230,8 +278,8 @@ body {
       .top-slider__img-box2 {
         width: 658px;
         height: 204px;
-        bottom: 227px;
-        left: 212px; } }
+        bottom: 229px;
+        left: 214px; } }
   .top-slider__img-big {
     width: 1192px;
     height: 521px; }
@@ -246,49 +294,6 @@ body {
       .top-slider__img-small {
         width: 658px;
         height: 204px; } }
-
-.button {
-  display: block;
-  border: 3px solid #87a6ea;
-  text-decoration: none;
-  text-align: center;
-  font: 34px/56px "Bebas Neue Regular", Arial, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #87a6ea;
-  cursor: pointer;
-  transition: linear 0.2s; }
-  @media only screen and (max-width: 1340px) {
-    .button {
-      font-size: 26px; } }
-  .button:hover {
-    background-color: #87a6ea;
-    color: #ffffff; }
-  .button--promo {
-    width: 303px;
-    margin: 45px 0 0 0; }
-    @media only screen and (max-width: 1340px) {
-      .button--promo {
-        width: 250px; } }
-  .button--submit {
-    width: 300px;
-    padding: 0;
-    margin: 0;
-    outline: 0;
-    background-color: #ffffff; }
-
-.triangle-right {
-  position: relative;
-  top: 5px; }
-  .triangle-right--special {
-    position: absolute;
-    right: 0;
-    bottom: 0; }
-
-.triangle-left {
-  position: relative;
-  top: -1px;
-  left: 0; }
 
 .main-logo {
   width: 520px;
@@ -415,6 +420,16 @@ body {
     padding: 140px 0 0 0;
     position: relative;
     z-index: 3; }
+    @media only screen and (max-width: 1340px) {
+      .projects__inner {
+        width: 970px;
+        padding-top: 170px; } }
+  @media only screen and (max-width: 1340px) and (max-width: 992px) {
+    .projects__inner {
+      width: 750px; } }
+  @media only screen and (max-width: 1340px) and (max-width: 768px) {
+    .projects__inner {
+      width: 320px; } }
   .projects__inner::before {
     content: " ";
     display: block;
@@ -441,6 +456,10 @@ body {
     letter-spacing: 1px;
     color: #ffffff;
     background-color: #3d6dd1; }
+    @media only screen and (max-width: 1340px) {
+      .projects__header {
+        width: 285px;
+        left: 36%; } }
   .projects__header::after {
     content: "02";
     display: block;
@@ -453,6 +472,9 @@ body {
             transform: rotate(90deg);
     font: 71px "GothamPro Light", Arial, sans-serif;
     color: #87a6ea; }
+    @media only screen and (max-width: 1340px) {
+      .projects__header::after {
+        right: 71px; } }
 
 .project-box {
   margin-bottom: 100px; }
@@ -480,16 +502,30 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media only screen and (max-width: 1340px) {
+      .project-box__logo-wrap {
+        width: 480px;
+        height: 358px; } }
   .project-box__logo-img {
     width: 580px; }
+    @media only screen and (max-width: 1340px) {
+      .project-box__logo-img {
+        width: 480px; } }
   .project-box__gallery {
     width: 650px;
     height: 500px; }
+    @media only screen and (max-width: 1340px) {
+      .project-box__gallery {
+        width: 460px;
+        height: 358px; } }
   .project-box__text {
     padding: 30px 0 0 0;
     font: 24px/1.2 "GothamPro Regular", Arial, sans-serif;
     text-align: justify;
     color: #2b2a2c; }
+    @media only screen and (max-width: 1340px) {
+      .project-box__text {
+        font-size: 20px; } }
   .project-box__links {
     margin-top: 35px;
     display: -webkit-flex;
@@ -498,12 +534,23 @@ body {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row; }
+  .project-box__link-img {
+    width: 315px;
+    height: 102px; }
+    @media only screen and (max-width: 1340px) {
+      .project-box__link-img {
+        width: 240px;
+        height: 80px; } }
   .project-box__app-link {
     display: block;
     width: 315px;
     height: 102px;
     margin-right: 45px;
     cursor: pointer; }
+    @media only screen and (max-width: 1340px) {
+      .project-box__app-link {
+        width: 240px;
+        height: 80px; } }
   .project-box__app-link:last-child {
     margin-right: 0; }
 
@@ -527,6 +574,17 @@ body {
     width: 314px;
     height: 240px;
     position: relative; }
+    @media only screen and (max-width: 1340px) {
+      .gallery__item {
+        width: 220px;
+        height: 170px; } }
+  .gallery__image {
+    width: 314px;
+    height: 240px; }
+    @media only screen and (max-width: 1340px) {
+      .gallery__image {
+        width: 220px;
+        height: 170px; } }
   .gallery__overlay {
     width: 314px;
     height: 240px;
@@ -537,6 +595,11 @@ body {
     cursor: pointer;
     transition: linear 0.1s;
     opacity: 0; }
+    @media only screen and (max-width: 1340px) {
+      .gallery__overlay {
+        width: 220px;
+        height: 170px;
+        background-size: 80px 80px; } }
   .gallery__overlay:hover {
     opacity: 1; }
 
@@ -548,6 +611,16 @@ body {
     padding: 165px 0 0 0;
     position: relative;
     z-index: 2; }
+    @media only screen and (max-width: 1340px) {
+      .features__inner {
+        padding-top: 195px;
+        width: 970px; } }
+  @media only screen and (max-width: 1340px) and (max-width: 992px) {
+    .features__inner {
+      width: 750px; } }
+  @media only screen and (max-width: 1340px) and (max-width: 768px) {
+    .features__inner {
+      width: 320px; } }
   .features__inner::before {
     content: " ";
     display: block;
@@ -574,6 +647,10 @@ body {
     letter-spacing: 1px;
     color: #3d6dd1;
     background-color: #ffffff; }
+    @media only screen and (max-width: 1340px) {
+      .features__header {
+        width: 355px;
+        left: 32.5%; } }
   .features__header::after {
     content: "03";
     display: block;
@@ -586,12 +663,18 @@ body {
             transform: rotate(90deg);
     font: 71px "GothamPro Light", Arial, sans-serif;
     color: #87a6ea; }
+    @media only screen and (max-width: 1340px) {
+      .features__header::after {
+        right: 97px; } }
   .features__text {
     padding: 0 20px;
     text-align: center;
     font: 24px/1.2 "GothamPro Regular", Arial, sans-serif;
     letter-spacing: 1px;
     color: #ffffff; }
+    @media only screen and (max-width: 1340px) {
+      .features__text {
+        font-size: 19px; } }
   .features__wrap {
     padding-top: 30px;
     display: -webkit-flex;
@@ -621,6 +704,9 @@ body {
     font: 34px/1.6 "Bebas Neue Bold", Arial, sans-serif;
     letter-spacing: 1px;
     color: #ffffff; }
+    @media only screen and (max-width: 1340px) {
+      .features__item-head {
+        font-size: 29px; } }
   .features__border-wrap {
     width: 400px;
     height: 335px;
@@ -636,6 +722,10 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media only screen and (max-width: 1340px) {
+      .features__border-wrap {
+        width: 230px;
+        height: 270px; } }
   .features__border {
     width: 216px;
     height: 216px;
@@ -655,10 +745,27 @@ body {
             transform: rotate(45deg);
     background-color: #4b99ba;
     transition: linear .2s; }
+    @media only screen and (max-width: 1340px) {
+      .features__border {
+        width: 160px;
+        height: 160px;
+        border-width: 12px; } }
   .features__border:hover {
     width: 180px;
     height: 180px;
     border-width: 10px; }
+    @media only screen and (max-width: 1340px) {
+      .features__border:hover {
+        width: 145px;
+        height: 145px;
+        border-width: 8px; } }
+  .features__image {
+    width: 183px;
+    height: 184px; }
+    @media only screen and (max-width: 1340px) {
+      .features__image {
+        width: 142px;
+        height: 143px; } }
 
 .contacts {
   background-color: #ffffff; }
@@ -677,6 +784,16 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media only screen and (max-width: 1340px) {
+      .contacts__inner {
+        width: 970px;
+        padding-top: 140px; } }
+  @media only screen and (max-width: 1340px) and (max-width: 992px) {
+    .contacts__inner {
+      width: 750px; } }
+  @media only screen and (max-width: 1340px) and (max-width: 768px) {
+    .contacts__inner {
+      width: 320px; } }
   .contacts__inner::before {
     content: " ";
     display: block;
@@ -703,6 +820,10 @@ body {
     letter-spacing: 1px;
     color: #ffffff;
     background-color: #3d6dd1; }
+    @media only screen and (max-width: 1340px) {
+      .contacts__header {
+        width: 300px;
+        left: 34.4%; } }
   .contacts__header::after {
     content: "04";
     display: block;
@@ -715,23 +836,38 @@ body {
             transform: rotate(90deg);
     font: 71px "GothamPro Light", Arial, sans-serif;
     color: #87a6ea; }
+    @media only screen and (max-width: 1340px) {
+      .contacts__header::after {
+        right: 73px; } }
   .contacts__promo-head {
     text-align: center;
     text-transform: uppercase;
     font: 60px/1.2 "Bebas Neue Regular", Arial, sans-serif;
     letter-spacing: 2px;
     color: #87a6ea; }
+    @media only screen and (max-width: 1340px) {
+      .contacts__promo-head {
+        font-size: 50px; } }
   .contacts__text {
     padding: 25px 0 0 0;
     font: 24px/1.2 "GothamPro Regular", Arial, sans-serif;
     text-align: center;
     color: #2b2a2c; }
+    @media only screen and (max-width: 1340px) {
+      .contacts__text {
+        font-size: 20px; } }
   .contacts__social {
     width: 410px;
     margin: 40px 0 30px 0; }
+    @media only screen and (max-width: 1340px) {
+      .contacts__social {
+        width: 350px; } }
   .contacts__form-wrap {
     width: 960px;
     padding-top: 20px; }
+    @media only screen and (max-width: 1340px) {
+      .contacts__form-wrap {
+        width: 710px; } }
 
 .feedback {
   display: -webkit-flex;
@@ -744,13 +880,18 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch; }
   .feedback__inp-text {
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid #3d6dd1;
     outline: none;
     font: 18px "GothamPro Light", Arial, sans-serif;
     color: #2b2a2c; }
+    @media only screen and (max-width: 1340px) {
+      .feedback__inp-text {
+        padding: 15px 0;
+        margin-bottom: 15px;
+        font-size: 16px; } }
   .feedback__inp-text--last {
     margin-bottom: 55px; }
 
@@ -771,8 +912,20 @@ body {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end; }
+    @media only screen and (max-width: 1340px) {
+      .main-footer__inner {
+        width: 970px; } }
+  @media only screen and (max-width: 1340px) and (max-width: 992px) {
+    .main-footer__inner {
+      width: 750px; } }
+  @media only screen and (max-width: 1340px) and (max-width: 768px) {
+    .main-footer__inner {
+      width: 320px; } }
   .main-footer__up {
     margin-bottom: 20px; }
+    @media only screen and (max-width: 1340px) {
+      .main-footer__up {
+        margin-bottom: 15px; } }
   .main-footer__wrap {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -789,6 +942,9 @@ body {
     font: 30px "Bebas Neue Regular", Arial, sans-serif;
     letter-spacing: 1px;
     color: #ffffff; }
+    @media only screen and (max-width: 1340px) {
+      .main-footer__text {
+        font-size: 26px; } }
   .main-footer__link {
     display: inline-block;
     margin-bottom: 7px;
@@ -800,6 +956,9 @@ body {
     cursor: pointer;
     color: #ffffff;
     transition: linear .1s; }
+    @media only screen and (max-width: 1340px) {
+      .main-footer__link {
+        font-size: 16px; } }
   .main-footer__link:hover {
     opacity: 0.6; }
   .main-footer__link::after {
@@ -812,17 +971,24 @@ body {
     right: 0;
     background: url("../img/gh-bg.svg") center center no-repeat;
     background-size: cover; }
+    @media only screen and (max-width: 1340px) {
+      .main-footer__link::after {
+        width: 14px;
+        height: 14px; } }
 
 .up-arrow {
   display: block;
   width: 30px;
   height: 30px;
   text-decoration: none;
-  font-size: 50px;
   color: #ffffff;
   background: url("../img/up-arrow.svg") center center no-repeat;
   background-size: cover;
   cursor: pointer; }
+  @media only screen and (max-width: 1340px) {
+    .up-arrow {
+      width: 25px;
+      height: 25px; } }
 
 /******** modal window *************/
 .modal-frame {
