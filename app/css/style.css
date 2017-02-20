@@ -108,6 +108,7 @@ body {
   top: -1px;
   left: 0; }
 
+/* MAIN-HEADER SECTION */
 .main-header {
   background-color: #3d6dd1;
   position: relative; }
@@ -869,6 +870,7 @@ body {
   .gallery__overlay:hover {
     opacity: 1; }
 
+/* FEATURES SECTION */
 .features {
   background-color: #3d6dd1; }
   .features__inner {
@@ -1091,6 +1093,7 @@ body {
         width: 142px;
         height: 143px; } }
 
+/* CONTACTS SECTION */
 .contacts {
   background-color: #ffffff; }
   .contacts__inner {
@@ -1253,6 +1256,7 @@ body {
   .feedback__inp-text--last {
     margin-bottom: 55px; }
 
+/* FOOTER SECTION */
 .main-footer {
   position: relative;
   background: url("../img/footer-bg.svg") right bottom no-repeat; }
@@ -1381,7 +1385,7 @@ body {
       width: 22px;
       height: 22px; } }
 
-/******** modal window *************/
+/* MODAL WINDOW */
 .modal-frame {
   width: 70%;
   position: relative;
