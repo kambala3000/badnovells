@@ -3,6 +3,10 @@
 (function () {
 
     $(document).ready(function () {
+        if ($('html').attr('lang') === 'en') {
+            $('.js-lang-item:first-child').removeClass('main-header__lang-item--transparent');
+            $('.js-lang-item:last-child').addClass('main-header__lang-item--transparent');
+        }
         $('.js-top-slider').slick({
             autoplay: true,
             autoplaySpeed: 3000,

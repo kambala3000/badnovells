@@ -2,7 +2,7 @@
 	$('.gallery__item').click(function () {
 		if ($('.modal-window').length > 0) return;
 		var imgPath = $(this).find('img[data-link="modal"]').attr('src');
-		var format = imgPath.slice(imgPath.indexOf('.'));
+		var format = imgPath.slice(-4);
 		imgPath = imgPath.slice(0, imgPath.length - format.length) + '-full' + format;
 		var modalContent = '<div class="modal-window js-close-modal"><div class="modal-frame"><div class="close-modal js-close-modal"></div><div class="cross-in-circle js-close-modal"></div><img src="' + imgPath + '"alt="screen" width="100%"></div>';
 		$('body').prepend(modalContent);
